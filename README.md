@@ -9,5 +9,6 @@ We will provide a design spec and image assets to help you along the way. A desi
 The images are provided. 
 
 Click here to access the design spec.
+![design spec](https://github.com/github524/tea_cozy/blob/main/tea_cozy_design_spec.png)
 
 Good luck!

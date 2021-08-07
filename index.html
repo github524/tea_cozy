@@ -17,8 +17,7 @@
 
         <!-- Google Material Icons for the star -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- GitHub icon from iconify.design -->
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
         <!-- Normalize CDN for consistency across browsers -->
         <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'></script>
         <!-- jQuery CDN if required -->
@@ -27,7 +26,7 @@
         <!-- toggle open close dropdown menu -->
         <script>
             function toggleMenu(){
-                let currentState = document.getElementById('dropdownContent')
+                let currentState = document.getElementById('projectContent')
                 let openMenu = document.getElementById('openMenu')
                 let closeMenu = document.getElementById('closeMenu')
                 if(currentState.style.display === 'block') {
@@ -48,48 +47,165 @@
 
     <body>
         <div id="wrapper">
-            <nav id="topBar">
-                <div id="gitHubIcon">
-                    <!-- ADD LINK TO CURRENT REPO -->
-                    <a href="#">
-                        <span style="width: 24px; height: 24px;" class="iconify" data-icon="logos-github-icon" data-inline="false">
-                        </span>
-                    </a>
-                </div>
-                <div id="dropdownMenu">
+
             
-                    <button id="dropdownBtn">
-                        <h4>More Codecademy Projects</h4>
-                        
-                            <span id ='openMenu' class="material-icons position ">
-                                expand_more
-                            </span>
-                            <span id="closeMenu" class="material-icons position ">
-                                close
-                            </span>
-                        </button>
+            <section id="siteContent">
+
+            <!--  ADD SITE CONTENT HERE -->
+                
+            <!-- navBar courtesy of Tania Rascia https://codepen.io/taniarascia/pen/epKrPm -->
+
+            <section class="navigation">
+                <div class="nav-container">
+                  <div class="brand">
+                    <img src="img/img-tea-cozy-logo.png">
+                  </div>
+                  <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                      <li>
+                        <a href="#mission">Mission</a>
+                      </li>
+                      <li>
+                        <a href="#featured">Featured Tea</a>
+                      </li>
+                      <li>
+                        <a href="#locations">Locations</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </section>
+              <!-- end navigation section -->
+              <section id="backgroundImgDiv">
+                <!-- <img src="img/img-mission-background.jpeg"> -->
+                <div id="mission">
+                    <h2>Our Mission</h2>
+                    <h4>Handpicked, Artisanally Curater, Free Range, Sustainable, Small Batch, Fair Trade, organic Tea</h4>
+                </div>
+              </section>
+              <!-- end backgroundImg -->
+
+              <section id="featured">
+                  <h2>Tea of The Month</h2>
+                  <h4>What's Steeping At The Tea Cozy</h4>
+                <div id="flexboxContainer">
+                    <figure>
+                        <img src="img/img-berryblitz.webp" alt="Berries">
+                        <figcaption><h4>Fall Berry Blitz</h4></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-spiced-rum.webp" alt="Spiced Rum">
+                        <figcaption><h4>Spiced Rum Tea</h4></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-donut.jpeg" alt="Donut">
+                        <figcaption><h4>Seasonal Donuts</h4></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-myrtle-ave.webp" alt="Myrtle Ave">
+                        <figcaption><h4>Myrtle Ave Tea</h4></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-bedford-bizarre.jpeg" alt="">
+                        <figcaption><h4>Bedford Bizarre Tea</h4></figcaption>
+                    </figure>
+                </div>
+              </section>
+              <!-- end featured section -->
+              <section id='locations'>
+                <h2>Locations</h2>
+                <br>
+                <div id="flexLocations">
+                  <div>
+                    <h3>Downtown</h3>
+                    <h4>384 West 4th St</h4>
+                    <h4>Suite 108</h4>
+                    <h4>Portland, Maine</h4>
+                  </div>
+                  <div>
+                    <h3>East Bayside</h3>
+                    <h4>3433 Phisherman's Avenue</h4>
+                    <h4>(Northeast Corner)</h4>
+                    <h4>Portland, Maine</h4>
+                  </div>
+                  <div>
+                    <h3>Oakdale</h3>
+                    <h4>515 Crescent Avenue</h4>
+                    <h4>Second Floor</h4>
+                    <h4>Portland, Maine</h4>
+                  </div>
+                </div>
+                
+            </section>
+            <!-- end locations section -->
+            <footer>
+              <h2>The Tea Cozy</h2>
+              <h5>contact@theteacozy.com</h5>
+              <h5>917-555-8904</h5>
+              <h5 class="left">copyright The Tea Cozy 2017</h5>
+            </footer>
+            <br>
+            
+            
+
+
+
+            <!-- Codecademy Project Bar and gitHub Repo Link -->
+            <div id="bottomBar">
+
+                <div id="projectMenu">
+            
+
                     <!-- ADD NEW LINKS HERE -->
-                    <ul id="dropdownContent">
+                    <ul id="projectContent">
                         <li><a href="https://github524.github.io/excursion/">Excursion</a></li>
                         <li><a href="https://github524.github.io/dasmoto_arts">Dasmoto Arts</a></li>
                         <li><a href="https://github524.github.io/git_practice">Random Message</a></li>
                         <li><a href="https://github524.github.io/cssSelectors">CSS Selectors Cheatsheet</a></li>
                         <li><a href="https://github524.github.io/website_design/">Website Design System</a></li>
                     </ul>
+
+                    <button id="dropdownBtn">
+                        <h4>More Codecademy Projects</h4>
+                        
+                            <span id ='openMenu' class="material-icons position ">
+                                expand_less
+                            </span>
+                            <span id="closeMenu" class="material-icons position ">
+                                close
+                            </span>
+                        </button>
+
                 </div>
-            </nav>
-            
-            <section id="siteContent">
+                <!-- end projectMenu -->
+                <div id="gitHubIcon">
+                    <!-- ADD LINK TO CURRENT REPO -->
+                    <a href="https://github.com/github524/tea_cozy">
+                        GitHub Repo
+                    </a>
+                </div>
+            </div>
 
-            <!--  ADD SITE CONTENT HERE -->
-
-
-            </section>
-            
+        </section>  <!-- end Site Content -->
         </div> <!-- end #wrapper -->
 
         <!-- event listener for drop down menu toggle -->
         <script>document.getElementById('dropdownBtn').addEventListener('click', toggleMenu)</script>
+        <script>
+            (function($) { // Begin jQuery
+              $(function() { // DOM ready
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function() {
+                  $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                document.querySelector('#nav-toggle').addEventListener('click', function() {
+                  this.classList.toggle('active');
+                });
+              }); // end DOM ready
+            })(jQuery); // end jQuery
+        </script>
     </body>
 
 </html>

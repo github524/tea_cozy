@@ -2,76 +2,98 @@
     box-sizing: border-box;
 }
 
-/* STYLES TO GENERIC TOPBAR */
 #gitHubIcon {
-    float:left;
-    margin-top: 5px;
+    
+    margin: 5px auto;
     
 }
 html, body {
     margin:0;
     padding:0;
-    font-size: 16px;
+    font-size: 22px;
+    
+}
+body {
+    background-color: black;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: .75rem;
+}
+a {
+    font-size: .8rem;
 }
 #wrapper {
-    max-width:1000px;
+    width:1300px;
     margin:0 auto;
     padding: 0;
+    
+
 }
-#topBar {
-    position:relative;
+#bottomBar {
     width: 100%;
     background-color: white;
-    padding:3px 10px;
+    padding: 10px 10px 20px;
     color: #373F4A;
     text-align: center;
-    border-bottom: 2px solid #373F4A;
-    height: 44px;
-    position: fixed;
-    top:0;
-    left:0;
+    border-top: 1px solid #373F4A;
+    height: 100px;
+    z-index: 10;
+    font-size: 16px;
+    /* opacity: .5; */
+    
 }
-#dropdownMenu {
+#projectMenu {
     display: inline-block;
+    position:relative;
     width:270px;
-    margin: 0 auto;
+    margin: 5px auto;
+    background-color: white;
     cursor: pointer;
 }
-#dropdownMenu h4 {
+#projectMenu h4 {
     display: inline;
     margin: 0;
     padding: 5px;
+    font-size: 16px;
 }
 
-#dropdownContent {
+#projectContent {
     text-align: left;
     list-style: none;
     padding: 10px 0;
     width: 270px;
     cursor: pointer;
     display: none;
+    z-index: 10;
     margin: 0 auto;
-    box-shadow: 5px 10px 10px;
+    box-shadow: -5px -10px 10px;
     background-color: white;
+    position: absolute;
+    bottom:40px;
+    max-height:300px;
+    overflow-y: scroll;
     
 }
-#topBar ul li {
+#bottomBar ul li {
     display: block;
     padding: 10px 0 10px 16px;                
 }
 /* style the gold stars */
-#topBar ul li:before {
+#bottomBar ul li:before {
     font-family: 'material Icons';
     content: '\f0ec ';
     color: gold;
     position: relative;
     top:2px;
 }
-#topBar ul li:hover {
+#bottomBar ul li:hover {
     background-color: whitesmoke;
     
 }
-#topBar ul li a {
+#bottomBar ul li a {
     text-decoration: none;
     padding-left: 10px;
     color: #373F4A;
@@ -88,12 +110,290 @@ html, body {
 #dropdownBtn {
     background-color: white;
     border: 0;
+    margin:0 auto;
 }
 
-/* END STYLES TO GENERIC TOPBAR */
+/* END STYLES TO GENERIC bottomBar */
 
 
 #siteContent {
-    margin: 80px 5px 5px;
-    
+    font-family: Helvetica;
+    background-color: black;
+    color:seashell;
+    opacity:0.9;
+    height: 100vh;
+    width:100%;
 }
+
+/* navBar design Tania Rascia */
+
+.navigation {
+    height: 69px;
+    position:fixed;
+    border-bottom: 1px solid seashell;   
+    background-color: black;
+    top:0;
+    left:0;
+    right:0;
+  }
+  
+  .nav-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+  }
+  
+  .brand {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+
+  }
+  .brand img {
+    height: 50px;
+      max-width: 100%;
+      display: block;      
+    }
+  
+  .brand a,
+  .brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav {
+    float: right;
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a,
+  nav ul li a:visited {
+    display: block;
+    padding: 0 15px;
+    line-height: 68px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:visited:hover {
+    background: rgb(90, 86, 86);
+    color: #ffffff;
+  }
+  /* Mobile navigation */
+  
+  .nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-mobile {
+      display: block;
+    }
+    nav {
+      width: 100%;
+      padding: 70px 0 15px;
+    }
+    nav ul {
+      display: none;
+      text-align: center;
+    }
+    nav ul li {
+      float: none;
+    }
+    nav ul li a {
+      padding: 15px;
+      line-height: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .nav-list {
+      display: block !important;
+    }
+  }
+  
+  #nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+  }
+  
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+  
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  
+  #nav-toggle.active span:before,
+  #nav-toggle.active span:after {
+    top: 0;
+  }
+  
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+  
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+
+  /* end NavBar */
+
+  /* background section */
+
+  #backgroundImgDiv {
+      background: url(img/img-mission-background.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1200px;
+      height: 700px;
+      overflow: hidden;
+      margin: 69px 40px 0;
+      
+  }
+  @media only screen and (max-width:600px) {
+    #backgroundImgDiv {
+        max-height:350px;
+        }
+    }
+  #mission {
+      background-color: black;
+      text-align: center;
+    }
+    #flexboxContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #featured {
+        text-align: center;
+        background-color: black;
+        max-width:1000px;
+        padding:0;
+        margin: 20px auto;
+
+    }
+    figure {
+        margin:16px!important
+        
+    }
+    figcaption h4 {
+        padding:0;
+        margin-top:10px;
+    }
+    figure img {
+        width:100%;
+        height:auto;
+        display:block;
+    }
+    #featured figure {
+        width:300px;
+        height:200px;
+    }
+    #locations {
+      background: url(img/img-locations-background.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      height:500px;
+      max-width: 1200px;
+      padding:0;
+      margin: 20px auto;
+      color:white;
+    }
+
+    #flexLocations {
+      display: flex;
+      flex-wrap:nowrap;      
+      justify-content: center;
+      /* text-align: center; */
+      width:100%;
+    }
+    @media only screen and (max-width:780px) {
+      
+      #flexLocations div h3, h4 {
+        font-size: .8rem;
+      }
+      #flexLocations div {
+        padding:2px;
+      }
+      }
+      @media only screen and (max-width:550px) {
+        #locations {
+          height:1100px;
+        }
+        #flexLocations {
+          flex-direction:column;
+          align-items:center;
+        }
+      }
+    #locations h2 {
+      display: block;
+      padding: 40px 0 0 0;
+    }
+    #flexLocations div {
+      width:300px;
+      height: 300px;
+      background-color: black;
+      margin:15px 20px;
+      opacity:1;
+      text-align: center;
+      padding:30px;
+    }
+    footer {
+      height: 200px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      margin: 20px auto;
+    }
+    .left {
+      float: left;
+      margin-left:20px;
+      padding:0;
+      clear: both;
+    }
