@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+/* STYLES TO GENERIC TOPBAR */
+#gitHubIcon {
+    float:left;
+    margin-top: 5px;
+    
+}
+html, body {
+    margin:0;
+    padding:0;
+    font-size: 16px;
+}
+#wrapper {
+    max-width:1000px;
+    margin:0 auto;
+    padding: 0;
+}
+#topBar {
+    position:relative;
+    width: 100%;
+    background-color: white;
+    padding:3px 10px;
+    color: #373F4A;
+    text-align: center;
+    border-bottom: 2px solid #373F4A;
+    height: 44px;
+    position: fixed;
+    top:0;
+    left:0;
+}
+#dropdownMenu {
+    display: inline-block;
+    width:270px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#dropdownMenu h4 {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+#dropdownContent {
+    text-align: left;
+    list-style: none;
+    padding: 10px 0;
+    width: 270px;
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+    box-shadow: 5px 10px 10px;
+    background-color: white;
+    
+}
+#topBar ul li {
+    display: block;
+    padding: 10px 0 10px 16px;                
+}
+/* style the gold stars */
+#topBar ul li:before {
+    font-family: 'material Icons';
+    content: '\f0ec ';
+    color: gold;
+    position: relative;
+    top:2px;
+}
+#topBar ul li:hover {
+    background-color: whitesmoke;
+    
+}
+#topBar ul li a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #373F4A;
+}
+
+#closeMenu {
+    display: none;
+    color: tomato;
+}
+#openMenu, #closeMenu {
+    position:relative;
+    top:5px;
+}
+#dropdownBtn {
+    background-color: white;
+    border: 0;
+}
+
+/* END STYLES TO GENERIC TOPBAR */
+
+
+#siteContent {
+    margin: 80px 5px 5px;
+    
+}
