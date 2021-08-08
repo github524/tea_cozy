@@ -2,11 +2,7 @@
     box-sizing: border-box;
 }
 
-#gitHubIcon {
-    
-    margin: 5px auto;
-    
-}
+
 html, body {
     margin:0;
     padding:0;
@@ -25,13 +21,13 @@ h4 {
 a {
     font-size: .8rem;
 }
-#wrapper {
+/* #wrapper {
     width:1300px;
     margin:0 auto;
     padding: 0;
     
 
-}
+} */
 #bottomBar {
     width: 100%;
     background-color: white;
@@ -45,75 +41,6 @@ a {
     /* opacity: .5; */
     
 }
-#projectMenu {
-    display: inline-block;
-    position:relative;
-    width:270px;
-    margin: 5px auto;
-    background-color: white;
-    cursor: pointer;
-}
-#projectMenu h4 {
-    display: inline;
-    margin: 0;
-    padding: 5px;
-    font-size: 16px;
-}
-
-#projectContent {
-    text-align: left;
-    list-style: none;
-    padding: 10px 0;
-    width: 270px;
-    cursor: pointer;
-    display: none;
-    z-index: 10;
-    margin: 0 auto;
-    box-shadow: -5px -10px 10px;
-    background-color: white;
-    position: absolute;
-    bottom:40px;
-    max-height:300px;
-    overflow-y: scroll;
-    
-}
-#bottomBar ul li {
-    display: block;
-    padding: 10px 0 10px 16px;                
-}
-/* style the gold stars */
-#bottomBar ul li:before {
-    font-family: 'material Icons';
-    content: '\f0ec ';
-    color: gold;
-    position: relative;
-    top:2px;
-}
-#bottomBar ul li:hover {
-    background-color: whitesmoke;
-    
-}
-#bottomBar ul li a {
-    text-decoration: none;
-    padding-left: 10px;
-    color: #373F4A;
-}
-
-#closeMenu {
-    display: none;
-    color: tomato;
-}
-#openMenu, #closeMenu {
-    position:relative;
-    top:5px;
-}
-#dropdownBtn {
-    background-color: white;
-    border: 0;
-    margin:0 auto;
-}
-
-/* END STYLES TO GENERIC bottomBar */
 
 
 #siteContent {
@@ -125,7 +52,7 @@ a {
     width:100%;
 }
 
-/* navBar design Tania Rascia */
+/* navBar */
 
 .navigation {
     height: 69px;

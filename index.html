@@ -5,7 +5,7 @@
         <meta charset="utf-8">
 
         <!-- ADD TITLE OF THE PAGE -->
-        <title></title>
+        <title>Tea Cozy</title>
 
         <!-- ADD A META DESCRIPTION OF THE SITE -->
         <meta name="description" content=" ">
@@ -15,32 +15,12 @@
         <link rel="stylesheet" href="styles.css">
 
 
-        <!-- Google Material Icons for the star -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Normalize CDN for consistency across browsers -->
         <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'></script>
         <!-- jQuery CDN if required -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
-        <!-- toggle open close dropdown menu -->
-        <script>
-            function toggleMenu(){
-                let currentState = document.getElementById('projectContent')
-                let openMenu = document.getElementById('openMenu')
-                let closeMenu = document.getElementById('closeMenu')
-                if(currentState.style.display === 'block') {
-                    currentState.style.display = 'none'
-                    closeMenu.style.display = 'none'
-                    openMenu.style.display = 'inline-block'
 
-                } else {
-                    currentState.style.display = 'block'
-                    closeMenu.style.display = 'inline-block'
-                    openMenu.style.display = 'none'
-                }
-            }
-        </script>
 
 
     </head>
@@ -146,66 +126,11 @@
               <h5 class="left">copyright The Tea Cozy 2017</h5>
             </footer>
             <br>
-            
-            
 
-
-
-            <!-- Codecademy Project Bar and gitHub Repo Link -->
-            <div id="bottomBar">
-
-                <div id="projectMenu">
-            
-
-                    <!-- ADD NEW LINKS HERE -->
-                    <ul id="projectContent">
-                        <li><a href="https://github524.github.io/excursion/">Excursion</a></li>
-                        <li><a href="https://github524.github.io/dasmoto_arts">Dasmoto Arts</a></li>
-                        <li><a href="https://github524.github.io/git_practice">Random Message</a></li>
-                        <li><a href="https://github524.github.io/cssSelectors">CSS Selectors Cheatsheet</a></li>
-                        <li><a href="https://github524.github.io/website_design/">Website Design System</a></li>
-                    </ul>
-
-                    <button id="dropdownBtn">
-                        <h4>More Codecademy Projects</h4>
-                        
-                            <span id ='openMenu' class="material-icons position ">
-                                expand_less
-                            </span>
-                            <span id="closeMenu" class="material-icons position ">
-                                close
-                            </span>
-                        </button>
-
-                </div>
-                <!-- end projectMenu -->
-                <div id="gitHubIcon">
-                    <!-- ADD LINK TO CURRENT REPO -->
-                    <a href="https://github.com/github524/tea_cozy">
-                        GitHub Repo
-                    </a>
-                </div>
-            </div>
 
         </section>  <!-- end Site Content -->
         </div> <!-- end #wrapper -->
 
-        <!-- event listener for drop down menu toggle -->
-        <script>document.getElementById('dropdownBtn').addEventListener('click', toggleMenu)</script>
-        <script>
-            (function($) { // Begin jQuery
-              $(function() { // DOM ready
-                // Toggle open and close nav styles on click
-                $('#nav-toggle').click(function() {
-                  $('nav ul').slideToggle();
-                });
-                // Hamburger to X toggle
-                document.querySelector('#nav-toggle').addEventListener('click', function() {
-                  this.classList.toggle('active');
-                });
-              }); // end DOM ready
-            })(jQuery); // end jQuery
-        </script>
     </body>
 
 </html>
